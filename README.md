@@ -1,5 +1,5 @@
 # Branches
-Pour une branche ,on peut executer pusieurs commits comme il est aussi possible de realiser un meme commit sur plusieurs branches.
+Pour une branche ,on peut executer pusieurs commits comme il est aussi possible de stocker un meme commit dans  plusieurs branches.
 
 ## Création d'une branche 
 il est recommandé de créér en premier un dépôt distant et le récuperer en local envue d'y créer des branches, autre que le master.
@@ -22,8 +22,15 @@ pour envoyer une branche autre que le master,créée en local ,on se positionne 
 
 ![]("C:/Users/skeita/Desktop/Branches/push_b1.PNG")
 
-Il suffit de retourner au dépôt distant puis choisir le no
+Il suffit d'utiliser la commande **git ls-remote** pour verfier si la branche pushée existe dans la liste des branches distantes.
+
 ![](""C:/Users/skeita/Desktop/Branches/verication_pushBranche.PNG")
-Créez une branche b2 à partir du commit précédant le master courant, faites quelques commits dans b2 puis fusionnez-les dans le master.
-Fusionnez le master dans b1 et vérifiez le graphe des commits avec le client Git console et avec un client graphique.
+
+## Création d'une nouvelle branche "b2" à partir du commit précédant dans le master courant,fusion de quelques commits dans b2  dans le master.
+Il faudrait retourner au commit precédent du master(avant la fusion avec les modication d'une autre branche)par la commande 
+**git checkout --** puis créer la nouvelle branche dans le master (**git branch "nom_branche"**).Une fois des commits realisés dans la nouvelle branche sur des modifications, on peut utiliser la commande **git merge "nom_branche** dans le master.
+
+![](""C:/Users/skeita/Desktop/Branches/b3_merge.PNG")
+
+Fusion la branche  master dans b1 et vérifiez le graphe des commits avec le client Git console et avec un client graphique.
 Envoyez la branche b2 sur le serveur puis supprimez-la sur le dépôt local puis sur le dépôt distant.
