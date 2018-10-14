@@ -1,5 +1,5 @@
 # Branches
-Pour une branche ,on peut executer pusieurs commits comme il est aussi possible de stocker un meme commit dans  plusieurs branches.
+Pour une branche,on peut executer pusieurs commits comme il est aussi possible de stocker un meme commit dans  plusieurs branches.
 
 ## Création d'une branche 
 il est recommandé de créér en premier un dépôt distant et le récuperer en local envue d'y créer des branches, autre que le master.
@@ -37,4 +37,11 @@ Il faudrait retourner au commit precédent du master(avant la fusion avec les mo
 ![](""C:/Users/skeita/Desktop/Branches/")
 et vérifiez le graphe des commits avec le client Git console et avec un client graphique.
 
-Envoyez la branche b2 sur le serveur puis supprimez-la sur le dépôt local puis sur le dépôt distant.
+## Envoie d'une nouvelle branche  locale sur le serveur
+pour envoyer une branche sur le serveur,etant dans cette branche, on utilise la commande **git push --set-upstream "origin" "nom_branche"**
+![]("C:/Users/skeita/Desktop/Branches/pushb3.PNG")
+
+##Suppression d'une branche en à distance puis à locale.
+pour supprimer une branche,il est necessaire de se positionner dans une autre branche (master de référence).On utilise les commandes **git branch -d "nom du branche "** pour la suppression locale et **git push --delete origin nom_branche" **
+
+![]("C:/Users/skeita/Desktop/Branches/supression b3.PNG")
