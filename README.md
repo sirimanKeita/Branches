@@ -26,11 +26,15 @@ Il suffit d'utiliser la commande **git ls-remote** pour verfier si la branche pu
 
 ![](""C:/Users/skeita/Desktop/Branches/verication_pushBranche.PNG")
 
-## Création d'une nouvelle branche "b2" à partir du commit précédant dans le master courant,fusion de quelques commits dans b2  dans le master.
+## Création d'une nouvelle branche "b2" à partir du commit précédant dans le master courant,fusion dans le master de quelques commits réalisés dans b2. 
 Il faudrait retourner au commit precédent du master(avant la fusion avec les modication d'une autre branche)par la commande 
 **git checkout --** puis créer la nouvelle branche dans le master (**git branch "nom_branche"**).Une fois des commits realisés dans la nouvelle branche sur des modifications, on peut utiliser la commande **git merge "nom_branche** dans le master.
 
 ![](""C:/Users/skeita/Desktop/Branches/b3_merge.PNG")
 
-Fusion la branche  master dans b1 et vérifiez le graphe des commits avec le client Git console et avec un client graphique.
+## Fusion  de la branche  master dans une autre branche (comme exemple le master dans la branche "b1").
+
+![](""C:/Users/skeita/Desktop/Branches/")
+et vérifiez le graphe des commits avec le client Git console et avec un client graphique.
+
 Envoyez la branche b2 sur le serveur puis supprimez-la sur le dépôt local puis sur le dépôt distant.
