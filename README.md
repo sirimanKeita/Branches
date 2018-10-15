@@ -6,6 +6,7 @@ Il est recommandé de créér en premier un dépôt distant et de le récuperer 
 
 ![](""C:/Users/skeita/Desktop/Branches/creation_branche.PNG")
 
+
 ## Fusion des commits réalisées dans deux branches différentes
 
 Pour exécuter des commits dans une branche autre que le master,il faut préalablement s'y positionner par la commande 
@@ -15,15 +16,18 @@ pour fusionner  ces commits dans la branche master,il faut retourner dans cette 
 
 ![]("C:/Users/skeita/Desktop/Branches/comit_branches_b1_merges_branches.PNG")
 
+
 ## Envoie d'une branche sur le serveur et vérification de sa présence sur la page web du serveur.
 pour envoyer une branche autre que le master,créée en local ,on se positionne dans cette branche puis on uilise la commande
 **git push --set-upstream origin "nom_branche"**
 
 ![]("C:/Users/skeita/Desktop/Branches/push_b1.PNG")
 
+
 Il suffit d'utiliser la commande **git ls-remote** pour verfier si la branche pushée existe dans la liste des branches distantes.
 
 ![](""C:/Users/skeita/Desktop/Branches/verication_pushBranche.PNG")
+
 
 ## Création d'une nouvelle branche à partir du commit précédant dans le master courant et fusion dans le master de quelques commits réalisés dans la nouvelle branche . 
 Il faudrait retourner au commit precédent du master(avant la fusion avec les modication d'une autre branche)par la commande 
